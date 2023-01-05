@@ -1,0 +1,21 @@
+@mixin color_state {
+	&:hover {
+		color: $hover-color;
+		transition: 0.3s ease-in;
+	}
+	&:active {
+		color: $active-color;
+		transition: 0.3s ease-in;
+	}
+}
+
+@mixin background_state {
+	&:hover {
+		background: $hover-color;
+		transition: 0.3s ease-in;
+	}
+	&:active {
+		background: $active-color;
+		transition: 0.3s ease-in;
+	}
+}

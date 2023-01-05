@@ -1,0 +1,27 @@
+.bio {
+	padding: 18px 0;
+	background-color: #0d0d0d;
+	@media (min-width: 576px) {
+		padding: 0;
+		background-color: $background-color;
+	}
+	&__text {
+		font-family: "Muller";
+		font-size: 12px;
+		line-height: 16px;
+		@media (min-width: 576px) {
+			font-family: "Montserrat";
+			font-size: 16px;
+			line-height: 140%;
+		}
+		span {
+			display: inline-block;
+			margin-bottom: 3px;
+		}
+	}
+	&__link {
+		color: $text-optional;
+		transition: 0.3s ease-in;
+		@include color_state;
+	}
+}

@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"),
+		url("../fonts/Montserrat-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff") format("woff"),
+		url("../fonts/Montserrat-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Muller";
+	font-display: swap;
+	src: local("MullerMedium"), url("../fonts/MullerMedium.woff") format("woff"),
+		url("../fonts/MullerMedium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Murecho";
+	font-display: swap;
+	src: local("Murecho-Medium"), url("../fonts/Murecho-Medium.woff") format("woff"),
+		url("../fonts/Murecho-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+}

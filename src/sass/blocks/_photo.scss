@@ -1,0 +1,149 @@
+.photo {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4) 0%,
+			rgba(0, 0, 0, 0) 34.38%,
+			rgba(0, 0, 0, 0.268) 79.69%,
+			rgba(0, 0, 0, 0.4) 100%
+		),
+		url("../img/photo/PhotoMob.jpg") no-repeat;
+	background-size: 100%;
+	min-height: 198px;
+	padding: 16px 0;
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background: linear-gradient(
+				180deg,
+				rgba(0, 0, 0, 0.4) 0%,
+				rgba(0, 0, 0, 0) 34.38%,
+				rgba(0, 0, 0, 0.268) 79.69%,
+				rgba(0, 0, 0, 0.4) 100%
+			),
+			url("../img/photo/PhotoMob2x.jpg") no-repeat;
+		background-size: 100%;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: calc(198px - 32px);
+		@media (min-width: 576px) {
+			// min-height: calc(198px - 32px);
+		// min-height: calc(500px - 32px);
+		min-height: calc(360px - 16px);
+		
+		}
+		@media (min-width: 768px) {
+			min-height: calc(530px - 64px);
+		}
+	}
+
+	@media (min-width: 576px) {
+		background-image: url("../img/photo/PhotoTablet.jpg");
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		min-height: 360px;
+		// padding: 32px 0;
+		// padding: 32px 0;
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			background-image: url("../img/photo/PhotoTablet2x.jpg");
+		}
+	}
+	@media (min-width: 768px) {
+		padding: 32px 0;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__left {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+		margin-left: 16px;
+		@media (min-width: 576px) {
+			display: none;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16.8px;
+	}
+
+	&__subtitle {
+		margin-top: 4px;
+		font-family: "Muller";
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__point {
+		margin-top: 2px;
+		width: 4px;
+		height: 4px;
+		background-color: $text-primary;
+		border-radius: 100%;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.foot {
+	display: flex;
+	flex-direction: column;
+	&__text {
+		display: flex;
+		align-items: center;
+		height: 20px;
+	}
+
+	&__title {
+		margin-right: 8px;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 140%;
+		@media (min-width: 576px) {
+			font-size: 18px;
+		}
+	}
+
+	&__subtitle {
+		font-family: "Murecho";
+		font-size: 12px;
+		line-height: 17px;
+		color: #b19f9f;
+		@media (min-width: 576px) {
+			display: none;
+		}
+		&_tablet {
+			display: none;
+			@media (min-width: 576px) {
+				font-size: 16px;
+				line-height: 140%;
+				display: block;
+				margin-top: 8px;
+				color: $text-secondary;
+			}
+		}
+	}
+
+	&__img {
+		margin-bottom: 3px;
+		display: grid;
+		place-items: center;
+		background: linear-gradient(269.87deg, #1a64ba 0.11%, #093f7e 99.9%);
+		border-radius: 30px;
+		width: 14px;
+		height: 14px;
+	}
+}

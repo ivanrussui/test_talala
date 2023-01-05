@@ -1,0 +1,64 @@
+@import "libs/mybootstrap-reboot";
+@import "libs/font";
+
+@import "base/variables";
+@import "base/mixins";
+
+* {
+	color: $text-primary;
+	font-weight: 500;
+}
+
+body {
+	background-color: $background-color;
+}
+
+.wrap {
+	@media (min-width: 1024px) {
+		display: grid;
+		grid-template-columns: 102px 1fr;
+	}
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media (min-width: 768px) {
+		padding: 0 32px;
+	}
+	@media (min-width: 1024px) {
+		max-width: 990px;
+		padding: 0 10px;
+	}
+}
+
+.footer {
+	min-height: 11px;
+	@media (min-width: 576px) {
+		display: none;
+	}
+}
+
+.profile {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.photo,
+	.bio,
+	.card {
+		display: none;
+	}
+	.profile {
+		display: block;
+	}
+}
+
+@import "blocks/photo";
+@import "blocks/subscribe";
+@import "blocks/bio";
+@import "blocks/card";
+@import "blocks/feed";
+@import "blocks/profile";
+@import "blocks/sidepanel";

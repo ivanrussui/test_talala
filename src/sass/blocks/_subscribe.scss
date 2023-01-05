@@ -1,0 +1,99 @@
+.subscribe {
+	padding: 20px 0;
+	@media (min-width: 576px) {
+		padding: 40px 0;
+	}
+	@media (min-width: 1024px) {
+		padding: 0;
+		margin-top: 32px;
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (min-width: 576px) {
+			justify-content: flex-start;
+		}
+	}
+	&__btn {
+		padding: 0 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: linear-gradient(89.49deg, #1b9359 -15.91%, #11874e -15.9%, #1aba6d 103.08%);
+		border-radius: 30px;
+		min-width: 235px;
+		height: 28px;
+		&:hover {
+			background: linear-gradient(269.07deg, #1cd37b 2.7%, #09663a 101.35%);
+		}
+		&:active {
+			background: linear-gradient(269.07deg, #1cd37b 2.7%, #1ba060 101.35%);
+		}
+		@media (min-width: 576px) {
+			margin-right: 32px;
+			padding: 0 36px;
+			min-width: 342px;
+			height: 38px;
+		}
+		@media (min-width: 1024px) {
+			margin-right: 40px;
+			padding: 0 34px;
+			min-width: 411px;
+			height: 52px;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 140%;
+		@media (min-width: 576px) {
+			font-size: 16px;
+		}
+		@media (min-width: 1024px) {
+			font-size: 20px;
+		}
+	}
+	&__share {
+		display: grid;
+		place-items: center;
+		width: 28px;
+		height: 28px;
+		background: linear-gradient(269.07deg, #1cd37b 2.7%, #09663a 101.35%);
+		border-radius: 30px;
+		&:hover {
+			background: linear-gradient(89.49deg, #1b9359 -15.91%, #11874e -15.9%, #1aba6d 103.08%);
+		}
+		&:active {
+			background: linear-gradient(269.07deg, #1cd37b 2.7%, #1ba060 101.35%);
+		}
+		@media (min-width: 576px) {
+			width: 36px;
+			height: 36px;
+			img {
+				width: 14px;
+				height: 8.25px;
+			}
+		}
+		@media (min-width: 1024px) {
+			width: 52px;
+			height: 52px;
+			img {
+				width: 21px;
+				height: 13.5px;
+				height: 21px;
+			}
+		}
+	}
+	&__img img {
+		margin-bottom: 2px;
+		@media (min-width: 576px) {
+			margin-bottom: 3px;
+		}
+		@media (min-width: 1024px) {
+			margin-bottom: 1px;
+			width: 12px;
+			height: 20px;
+		}
+	}
+}
