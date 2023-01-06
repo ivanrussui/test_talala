@@ -65,14 +65,10 @@
 		}
 	}
 	&__link {
+		white-space: nowrap;
 		color: $text-optional;
 		transition: 0.3s ease-in;
 		@include color_state;
-		nobr {
-			color: $text-optional;
-			transition: 0.3s ease-in;
-			@include color_state;
-		}
 	}
 }
 
@@ -124,9 +120,8 @@
 		font-style: normal;
 		font-size: 12px;
 		line-height: 140%;
-		nobr {
-			color: $text-secondary;
-		}
+		white-space: nowrap;
+		color: $text-secondary;
 		@media (min-width: 576px) {
 			margin-top: 19px;
 			font-size: 16px;
